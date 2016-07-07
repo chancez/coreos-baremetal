@@ -29,15 +29,15 @@ function main {
 function usage {
   echo "USAGE: ${0##*/} <command>"
   echo "Commands:"
-  echo -e "\tcreate\tcreate virtualbox nodes"
-  echo -e "\tstart\tstart virtualbox nodes"
-  echo -e "\tstart-gui\tstart virtualbox nodes and show Virtualbox GUI"
-  echo -e "\treboot\t\treboot the virtualbox nodes"
-  echo -e "\treboot-disk\t\treboot the virtualbox nodes using disk as first priority for boot"
-  echo -e "\treboot-net\t\treboot the virtualbox nodes using net as first priority for boot"
-  echo -e "\tshutdown\tshutdown the virtualbox nodes"
-  echo -e "\tpoweroff\tpoweroff the virtualbox nodes"
-  echo -e "\tdestroy\t\tdestroy the virtualbox nodes"
+  echo -e "\tcreate|create virtualbox nodes\n" \
+  "\tstart|start virtualbox nodes\n" \
+  "\tstart-gui|start virtualbox nodes and show Virtualbox GUI\n" \
+  "\treboot|reboot the virtualbox nodes\n" \
+  "\treboot-disk|reboot the virtualbox nodes using disk as first priority for boot\n" \
+  "\treboot-net|reboot the virtualbox nodes using net as first priority for boot\n" \
+  "\tshutdown|shutdown the virtualbox nodes\n" \
+  "\tpoweroff|poweroff the virtualbox nodes\n" \
+  "\tdestroy|destroy the virtualbox nodes" | column -t -s '|'
 }
 
 nodes=(node1 node2 node3 node4)
